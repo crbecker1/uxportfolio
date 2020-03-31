@@ -1,35 +1,31 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
+PROJECT:	Chris R Becker
+VERSION:	Version Number 1.0
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
+A personal portfolio website heavily modified from a bootstrap template but a novice FE developer. My bread and butter is not code so please don't expect me to code from scratch.
 -------------------------------------------------------------------*/
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
-@font-face {
-  font-family: 'BwNistaInt-xBd';
-  src: url("../plugins/fonts/BwNistaInt-xBd.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,500,600,700|Roboto:400,500,700,900&display=swap');
+
 
 body {
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c;
+  color: #000000;
 }
 
 p, .paragraph {
   font-weight: 400;
-  color: #4c4c4c;
+  color: #000;
   font-size: 15px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
+  font-family: "Enriqueta", serif;
 }
 
 p-lg, .paragraph-lg {
@@ -38,7 +34,7 @@ p-lg, .paragraph-lg {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.2;
 }
 
@@ -66,6 +62,27 @@ h3, .h3 {
   font-size: 40px;
 }
 
+.quote {
+  padding-right: 50%;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  h3, .h3 {
+    font-size: 24px;
+  }
+
+  .quote {
+    padding-right: 5%;
+    padding-left: 20%;
+  }
+
+}
+
+
 h4, .h4 {
   font-size: 22px;
 }
@@ -80,12 +97,12 @@ h6, .h6 {
 
 /* Button style */
 .btn {
-  font-size: 22px;
-  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   padding: 16px 44px;
-  border-radius: 5px;
-  font-weight: 600;
+  border-radius: 3px;
+  font-weight: 200;
   border: 0;
   position: relative;
   z-index: 1;
@@ -112,31 +129,35 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #41228e;
+  background: #10a7e8;
   color: #fff;
 }
 
 .btn-primary:active {
-  background: #542cb7 !important;
+  background: #018198 !important;
 }
 
 .btn-primary:hover {
-  background: #542cb7;
+  background: #00cef2;
 }
 
 .btn-primary.focus, .btn-primary.active {
-  background: #542cb7 !important;
+  background: #10a7e8 !important;
   box-shadow: none !important;
 }
 
 .btn-transparent {
   background: transparent;
-  color: #41228e;
+  color: #10a7e8;
   font-weight: bold;
 }
 
 .btn-transparent:active, .btn-transparent:hover {
-  color: #41228e;
+  color: #10a7e8;
+}
+
+.img-btn-padding {
+  padding-top: 25px;
 }
 
 body {
@@ -145,14 +166,16 @@ body {
 }
 
 ::-moz-selection {
-  background: #542cb7;
+  background: #d4f2ff;
   color: #fff;
 }
 
 ::selection {
-  background: #542cb7;
+  background: #d4f2ff;
   color: #fff;
 }
+
+
 
 /* preloader */
 .preloader {
@@ -199,11 +222,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: #41228e !important;
+  color: rgb(0, 0, 143) !important;
 }
 
 a:hover {
-  color: #41228e;
+  color: #10a7e8;
 }
 
 .slick-slide {
@@ -251,7 +274,7 @@ a:hover {
 }
 
 .bg-primary {
-  background: #41228e !important;
+  background: #10a7e8 !important;
 }
 
 .bg-gray {
@@ -259,7 +282,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #41228e !important;
+  color: #10a7e8 !important;
 }
 
 .text-color {
@@ -327,11 +350,11 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: "Playfair Display", serif !important;
+  font-family: "Enriqueta", serif !important;
 }
 
 .font-tertiary {
-  font-family: "BwNistaInt-xBd" !important;
+  font-family: "Enriqueta" !important;
 }
 
 .shadow {
@@ -344,7 +367,8 @@ a:hover {
 
 /* icon */
 .icon {
-  font-size: 45px;
+  font-size: 60px;
+  padding: 5px;
 }
 
 .icon-bg {
@@ -359,6 +383,7 @@ a:hover {
 }
 
 /* /icon */
+
 /* slick slider */
 .slick-dots {
   text-align: center;
@@ -387,6 +412,7 @@ a:hover {
 }
 
 /* /slick slider */
+
 /* form */
 .form-control {
   border: 0;
@@ -396,7 +422,7 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #41228e;
+  border-color: #10a7e8;
   outline: 0;
   box-shadow: none !important;
 }
@@ -406,9 +432,11 @@ textarea.form-control {
 }
 
 /* /form */
+
 /* card */
 .card {
-  border: 0;
+  border: 1px;
+  border-color: #018198;
 }
 
 .card-header {
@@ -426,8 +454,8 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: #41228e;
-  padding: 15px 100px;
+  background-color: #005276;
+  padding: 15px 75px;
 }
 
 @media (max-width: 991px) {
@@ -438,13 +466,13 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navigation {
-    padding: 20px;
-    background: #41228e;
+    padding: 10px;
+    background: #005276;
   }
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "BwNistaInt-xBd";
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   padding: 15px;
 }
@@ -471,7 +499,12 @@ textarea.form-control {
 
 .hero-area h1 {
   position: relative;
-  z-index: 2;
+  z-index: 5;
+}
+
+.layer-front {
+  position: absolute;
+  z-index: 10;
 }
 
 .layer {
@@ -490,13 +523,13 @@ textarea.form-control {
 }
 
 #l3 {
-  top: 200px;
-  left: 40%;
+  top: 220px;
+  left: 15%;
 }
 
 #l4 {
-  top: 200px;
-  right: 40%;
+  top: 600px;
+  right: 70%;
 }
 
 #l5 {
@@ -505,18 +538,18 @@ textarea.form-control {
 }
 
 #l6 {
-  bottom: -20px;
+  bottom: 0px;
   left: 10%;
 }
 
 #l7 {
-  bottom: 100px;
+  top: 150px;
   left: 20%;
 }
 
 #l8 {
   bottom: 160px;
-  right: 45%;
+  right: 20%;
 }
 
 #l9 {
@@ -528,6 +561,7 @@ textarea.form-control {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 0;
 }
 
 /* skills */
@@ -549,7 +583,7 @@ textarea.form-control {
   height: 800px;
   bottom: 0;
   left: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 45%;
   -webkit-transform: translateX(-50%) rotate(0);
           transform: translateX(-50%) rotate(0);
@@ -560,7 +594,7 @@ textarea.form-control {
 
 .wave::after {
   border-radius: 47%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.05);
   -webkit-transform: translateX(-50%) rotate(0);
           transform: translateX(-50%) rotate(0);
   -webkit-animation: rotate 10s linear -5s infinite;
@@ -606,7 +640,7 @@ textarea.form-control {
 }
 
 .hover-bg-primary:hover {
-  background: #41228e;
+  background: #d4f2ff;
 }
 
 .hover-bg-primary:hover * {
@@ -615,7 +649,7 @@ textarea.form-control {
 
 .active-bg-primary {
   transition: .3s ease;
-  background: #41228e;
+  background: #d4f2ff;
 }
 
 .active-bg-primary * {
@@ -726,6 +760,7 @@ textarea.form-control {
 }
 
 /* /testimonial */
+
 /* footer */
 .footer-section {
   padding-top: 200px;
@@ -766,8 +801,8 @@ blockquote {
   display: inline-block;
   padding: 10px 20px;
   background: #eaeaea;
-  border-left: 2px solid #41228e;
-  font-style: italic;
+  border-left: 2px solid #10a7e8;
+  font-family: "Enriqueta", serif;
   font-size: 22px;
 }
 
@@ -776,7 +811,7 @@ blockquote {
 }
 
 .content strong {
-  font-family: "Playfair Display", serif;
+  font-family: "Enriqueta", serif;
   font-size: 22px;
   font-weight: normal;
   color: #000;
@@ -909,3 +944,6 @@ blockquote {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+
