@@ -49,12 +49,12 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 60px;
+  font-size: 48px;
 }
 
 @media (max-width: 991px) {
   h2, .h2 {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
 
@@ -234,13 +234,13 @@ a:hover {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-title {
-  margin-bottom: 80px;
-  font-family: "BwNistaInt-xBd";
+  margin-bottom: 20px;
+  font-family: "Enriqueta";
 }
 
 .bg-cover {
@@ -524,17 +524,17 @@ textarea.form-control {
 
 #l3 {
   top: 220px;
-  left: 15%;
+  left: 12%;
 }
 
 #l4 {
-  top: 600px;
-  right: 70%;
+  top: 100px;
+  right: 50%;
 }
 
 #l5 {
-  top: 100px;
-  right: -150px;
+  top: 50px;
+  right: 50px;
 }
 
 #l6 {
