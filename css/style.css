@@ -63,21 +63,22 @@ h3, .h3 {
 }
 
 .quote {
-  padding-right: 15%;
+  padding-right: 40%;
+  padding-left: 5%;
 }
 
 @media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio: 3) {
 
 h3, .h3 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .quote {
   padding-right: 5%;
-  padding-left: 10% !important;
+  padding-left: 5% !important;
 }
   
   }
@@ -378,6 +379,12 @@ a:hover {
   width: 100px;
   line-height: 100px;
   text-align: center;
+}
+
+/* icon */
+.icon-sm {
+  font-size: 20px;
+  padding: 10px;
 }
 
 .icon-light {
