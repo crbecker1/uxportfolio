@@ -38,8 +38,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+.teachType {
+  color: white;
+  font-family: "Enriqueta", serif;
+  line-height: 1.2;
+}
+
 h1, .h1 {
   font-size: 80px;
+}
+
+.centerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005276;
+  padding-top: 2%;
+  padding-bottom: 4%;
 }
 
 @media (max-width: 991px) {
@@ -177,7 +192,6 @@ body {
   background: #d4f2ff;
   color: #fff;
 }
-
 
 
 /* preloader */
